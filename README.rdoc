@@ -1,0 +1,10 @@
+= iReal B Parser
+
+Parses the iReal B chords format and outputs chords-json.
+
+== Command-Line Usage
+
+The gem comes with a single thor task "chords-json" that will take a file containing the iReal B chords format and convert it to chords-json (http://github.com/rubiety/chords-json).
+
+  $ irealb_parser json file.txt
+
