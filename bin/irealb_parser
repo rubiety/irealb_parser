@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 require "rubygems"
-require "factory_girl/upgrader/runner"
+require "irealb/parser"
+require "irealb/parser/runner"
 
-FactoryGirl::Upgrader::Runner.start
+IRealB::Parser::Runner.start

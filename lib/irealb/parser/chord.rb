@@ -1,5 +1,7 @@
 module IRealB
   class Parser
-    VERSION = "0.0.1"
+    class Chord
+
+    end
   end
 end

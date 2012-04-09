@@ -2,11 +2,11 @@ require "thor"
 require "irealb/parser"
 
 module IRealB
-  module Parser
+  class Parser
     class Runner < Thor
       desc :json, "Takes an iReal B text file (decoded contents of href attribute) and outputs chords-json."
       def json(path)
-
+        puts JSON.pretty_generate(IRealB::Parser.new(File.read(path)).parse.as_json)
       end
       
       protected
@@ -19,3 +19,4 @@ module IRealB
     end
   end
 end
+
