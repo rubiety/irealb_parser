@@ -6,6 +6,7 @@ module IRealB
       attr_accessor :repeat
       attr_accessor :bars
       attr_accessor :endings
+      attr_accessor :coda
 
       def initialize(attributes = {})
         self.bars = []
@@ -20,6 +21,7 @@ module IRealB
           :section => section,
           :time => time,
           :repeat => repeat,
+          :coda => coda,
           :bars => bars,
           :endings => endings
         }.reject {|k,v| v.nil? }
