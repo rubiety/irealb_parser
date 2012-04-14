@@ -79,6 +79,8 @@ module IRealB
           current_section = ChordGrouping.new
           current_ending = nil
         when "Z"
+          end_bar.call(token)
+
           tune.chord_groupings << current_section
           current_section = ChordGrouping.new
           tune_ended = true
