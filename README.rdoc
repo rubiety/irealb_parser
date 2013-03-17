@@ -2,6 +2,12 @@
 
 Parses the iReal B chords format and outputs chords-json.
 
+== NOTE: Broken with new iRealB File Format!
+
+Sometime within the past year iRealB changed their file format, and it's now much less straightforward. 
+Though the delimeters seem largely the same, the actual chords changes are encoded in some way. 
+I welcome contributions to get this gem updated to parsing the new iRealB format.
+
 == Command-Line Usage
 
 The gem comes with a single thor task "chords-json" that will take a file containing the iReal B chords format and convert it to chords-json (http://github.com/rubiety/chords-json).
