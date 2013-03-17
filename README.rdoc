@@ -8,3 +8,12 @@ The gem comes with a single thor task "chords-json" that will take a file contai
 
   $ irealb_parser json file.txt
 
+== How to Get a File
+
+Various iRealB links are available on the iRealB forums[http://irealb.com/forums]. 
+
+* Find a link, and copy link to the clipboard. What you have copied is the URL-encoded contents of the text we need to process.
+* Go to a URL decoder like this[http://meyerweb.com/eric/tools/dencoder/], paste the entire string in there, but remove the "irealb://" prefix.
+* Take decoded contents and save it to a text file.
+* Run <tt>$ irealb_parser json file.txt</tt> against the file.
+
